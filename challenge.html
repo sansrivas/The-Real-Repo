@@ -1,0 +1,21 @@
+"<h1>Challenge</h1>
+
+<div id="table"></div>
+
+<script id="template" type="text/x-handlebars-template"> <table>
+    <thead>
+        <th>Country Code</th>
+        <th>Country Name</th>
+        <th>Population</th>
+        <th>English?</th>
+    </thead>
+    <tbody>
+        {{#each countries}}
+        <tr>
+            <td>{{countryCode}}</td>
+            <td>{{countryName}}</td>
+            <td>{{population}}</td>
+            <td>{{english?}}</td>
+        {{/countries}} 
+    </tbody>
+</script>
